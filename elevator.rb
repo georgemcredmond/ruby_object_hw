@@ -18,7 +18,7 @@ class Elevator
 	attr_accessor :floor
 	def initialize(floor)
 	@floor = floor.to_i
-	end 
+		
 def go_up
 	puts "Please Select a Floor"
 	floorup = gets.to_i

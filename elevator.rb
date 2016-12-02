@@ -19,32 +19,31 @@ class Elevator
 	def initialize(floor)
 	@floor = floor.to_i
 		
-def go_up
-	puts "Please Select a Floor"
-	floorup = gets.to_i
-	dest = floor + (floorup - floor)
-	puts dest
-	for i in floor..dest 
-		puts "You current floor is #{i}"
-		if i == dest  
-			puts "Have a Wonderful Day"
-			end
-end
-
-def go_down
-	puts "What Floor Is This?"
-	floor = gets.to_i
-	puts "What Floor Do You Desire?"
-	floordown = gets.to_i
-	dest = floor - (floor - floordown)
-
-	while floor >= dest do 
-	
-	puts "You Current Floor is #{floor}"
-
-	floor -= 1  
-	
+	def go_up
+		puts "Please Select a Floor"
+		floorup = gets.to_i
+		dest = floor + (floorup - floor)
+		puts dest
+		for i in floor..dest 
+			puts "You current floor is #{i}"
+			if i == dest  
+				puts "Have a Wonderful Day"
+				end
 	end
-end
-end
+
+	def go_down
+		puts "What Floor Is This?"
+		floor = gets.to_i
+		puts "What Floor Do You Desire?"
+		floordown = gets.to_i
+		dest = floor - (floor - floordown)
+
+		while floor >= dest do 
+
+		puts "You Current Floor is #{floor}"
+
+		floor -= 1  
+
+		end
+	end
 end
